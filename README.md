@@ -1,2 +1,1 @@
-<a href="https://gitee.com/yx-dimples/actual-combat/tree/master/angular项目/wyy">angular8+ngrx8 🦌网易云 </a> <br
-<a href="https://gitee.com/yx-dimples/actual-combat/tree/master/vue项目/toutiao-publish-admin">头条后台管理系统 </a> <br>
+<a href="https://gitee.com/yx-dimples/actual-combat/tree/master/angular项目/wyy">angular8+ngrx8 🦌网易云 </a> <br>
