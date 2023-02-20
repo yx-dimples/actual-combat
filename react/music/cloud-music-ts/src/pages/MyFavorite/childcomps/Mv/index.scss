@@ -1,0 +1,45 @@
+@import '../../../../assets/css/variables.scss';
+
+.favorite-mv {
+  .hd {
+    border-bottom: 2px solid $font-color-red;
+    line-height: 1.5;
+  }
+
+  .mv-list {
+    display: grid;
+    justify-content: space-between;
+    grid-template-rows: repeat(10, auto-fill);
+    grid-template-columns: repeat(4, 24%);
+    margin-top: 10px;
+
+    li {
+      padding-bottom: 10px;
+      width: 100%;
+      cursor: pointer;
+
+      .img-wrap {
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 180px;
+          border-radius: 5px;
+        }
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 1.6;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .userName {
+        color: $font-color-grey2;
+      }
+    }
+  }
+}

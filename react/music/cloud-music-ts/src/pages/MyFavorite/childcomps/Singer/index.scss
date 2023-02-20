@@ -1,0 +1,39 @@
+@import '../../../../assets/css/variables.scss';
+
+.artist {
+  .hd {
+    border-bottom: 2px solid $font-color-red;
+    line-height: 1.5;
+  }
+
+  .artist-list {
+    li {
+      display: flex;
+      padding: 10px 0;
+      border-bottom: 1px solid $border;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .right {
+        flex: 1;
+        margin-left: 20px;
+        font-size: $font-size-sm;
+        color: $font-color-grey2;
+
+        .name {
+          font-size: $font-size-lg;
+          margin-bottom: 20px;
+          color: $font-color-white;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

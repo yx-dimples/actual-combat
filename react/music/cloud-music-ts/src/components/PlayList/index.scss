@@ -1,0 +1,55 @@
+@import '../../assets/css/variables.scss';
+
+.playlist {
+  .tabs {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    background-color: #363636;
+    width: 400px;
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+
+      li {
+        padding: 0 10px;
+        font-size: 15px;
+        color: #797979;
+      }
+
+      .selected {
+        color: #fff;
+      }
+    }
+
+    .hd {
+      padding: 5px 10px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid $border;
+
+      .delete {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        p {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .empty {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+  }
+}

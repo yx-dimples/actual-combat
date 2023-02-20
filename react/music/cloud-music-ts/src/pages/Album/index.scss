@@ -1,0 +1,99 @@
+@import '../../assets/css/variables.scss';
+
+.album {
+  .hd {
+    display: flex;
+
+    .img-wrap {
+      width: 187px;
+      height: 187px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $font-color-white;
+
+
+      img {
+        width: 177px;
+        height: 177px;
+      }
+    }
+
+    .right {
+      margin-left: 20px;
+      flex: 1;
+      font-size: 12px;
+      line-height: 1.5;
+
+      .name {
+        display: flex;
+        align-items: center;
+
+        p {
+          font-size: $font-size-title;
+          line-height: 1.2;
+        }
+      }
+
+      .artist {
+        margin-top: 10px;
+
+        span {
+          color: $blue;
+          cursor: pointer;
+          margin-left: 10px;
+        }
+      }
+
+      .time,
+      .company {
+        margin-top: 10px;
+      }
+
+      .btns {
+        margin-top: 10px;
+
+        .ant-btn {
+          margin-left: 10px;
+          font-size: $font-size-xs;
+          height: 20px;
+          padding: 0px 7px;
+          border-radius: 4px;
+          color: #666;
+
+          &:first-of-type {
+            margin-left: 0;
+            background: $blue;
+            color: white;
+            border: none
+          }
+        }
+      }
+    }
+  }
+
+  .description {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+
+    .hidden-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .content {
+      white-space: pre-wrap;
+      margin-top: 10px;
+    }
+
+    .content-btn {
+      margin-top: 10px;
+      float: right;
+      color: $blue;
+      cursor: pointer;
+    }
+  }
+}

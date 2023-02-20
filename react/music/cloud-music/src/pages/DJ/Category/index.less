@@ -1,0 +1,52 @@
+.category {
+  .adm-tabs {
+    margin-top: 56px;
+    .adm-tabs-tab {
+      color: #7e7e7e;
+      font-size: 20px;
+    }
+    .adm-tabs-tab-active {
+      color: #333;
+      font-weight: bolder;
+    }
+    .adm-tabs-tab-line{
+      height: 4px;
+      background: rgb(227, 96, 73);
+    }
+  }
+  ul {
+    li {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+      }
+      .info {
+        margin-left: 10px;
+        .info-name {
+          font-size: 20px;
+          font-weight: 600;
+          width: 236px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          word-wrap: normal;
+          cursor: pointer;
+        }
+        .info-nickname {
+          display: flex;
+          margin: 10px 0;
+          font-size: 16px;
+          align-items: center;
+        }
+        .info-count {
+          color: #999;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@import '../../assets/css/variables.scss';
+
+.mini-player {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  position: fixed;
+  z-index: $mini-player-z-index;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: $mini-player-height;
+  background-color: #252525;
+  color: #b1b1b1;
+
+
+  .song {
+    flex: 1;
+
+
+    .cover-content {
+      display: flex;
+      align-items: center;
+
+      .cover {
+        display: flex;
+        align-items: center;
+        width: 50px;
+        margin: 5px 0;
+        position: relative;
+
+        img {
+          width: 100%;
+          filter: blur(1px);
+        }
+
+        .bottom {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          color: $white;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .content {
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        line-height: 2;
+        margin-left: 10px;
+
+        .top {
+          display: flex;
+          align-items: flex-end;
+          white-space: nowrap;
+
+          .name {
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $font-color-white;
+          }
+
+          .artist {
+            margin: 0 4px;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 12px;
+          }
+        }
+
+
+        .time {
+          font-size: 12px;
+          color: $font-color-grey;
+        }
+      }
+    }
+
+    .songname {
+      margin-left: 10px;
+    }
+  }
+
+  .control {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .mode {
+    width: 250px;
+    display: flex;
+    align-items: center;
+
+    .mode-icon {
+      font-size: 24px;
+      color: $font-color;
+    }
+
+    .list-item {
+      margin: 0 15px;
+    }
+
+    .volume-item {
+      width: 150px;
+      display: flex;
+      align-items: center;
+
+      .volume-progress {
+        margin-left: 10px;
+        flex: 1;
+
+      }
+    }
+  }
+
+  .progress-bar-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -19px;
+    width: 100%;
+
+    .ant-slider {
+      .ant-slider-handle {
+        display: none;
+      }
+
+      &:hover {
+        .ant-slider-handle {
+          display: block
+        }
+      }
+    }
+  }
+}
+
+.ant-tooltip .ant-tooltip-inner {
+  font-size: 12px;
+}
+
+.ant-slider {
+  .ant-slider-rail {
+    background-color: #232323;
+  }
+
+  .ant-slider-track {
+    background-color: #d33a31;
+  }
+
+  .ant-slider-handle::after {
+    background-color: #d33a31;
+    box-shadow: 0 0 0 2px #d33a31;
+  }
+
+  &:hover {
+    .ant-slider-track {
+      background-color: #d33a31;
+    }
+  }
+
+  .ant-slider-dot-active {
+    border-color: #d33a31;
+  }
+}

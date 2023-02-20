@@ -1,0 +1,163 @@
+@import '../../assets/css/variables.scss';
+
+.user {
+  margin-top: 20px;
+
+  .hd {
+    display: flex;
+
+    .img-wrap {
+      width: 198px;
+      height: 198px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $border;
+
+      img {
+        width: 188px;
+        height: 188px;
+      }
+    }
+
+    .right {
+      margin-left: 20px;
+      flex: 1;
+
+      .name {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $border;
+        padding-bottom: 10px;
+
+        .left {
+          display: flex;
+          align-items: center;
+
+          p {
+            font-size: 24px;
+            color: $font-color;
+            margin: 0 10px;
+          }
+
+          .ant-tag {
+            border: 1px solid #e03a24;
+            color: #e03a24;
+          }
+
+          .MuiButton-containedPrimary {
+            background: $blue;
+            font-size: 12px;
+          }
+        }
+
+        .MuiButton-containedSizeSmall {
+          font-size: 12px;
+        }
+      }
+
+      .data {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        li {
+          padding: 0 40px 0 20px;
+          border-left: 1px solid $border;
+          line-height: 1.2;
+
+          &:first-of-type {
+            padding-left: 0;
+            border-left: none;
+          }
+
+          p {
+            font-size: 12px;
+
+            &:first-of-type {
+              font-size: 24px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .desc {
+        line-height: 1.5;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .wrapper {
+    margin: 20px 0;
+
+    .wrapper-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid $font-color-red;
+      line-height: 30px;
+
+      span {
+        font-size: 12px;
+        margin-left: 5px;
+        color: $font-color-grey2;
+      }
+
+      .right {
+        li {
+          float: left;
+          font-size: 12px;
+          color: $font-color-grey2;
+          padding-left: 10px;
+        }
+
+        .active {
+          font-weight: 500;
+          color: $font-color-white;
+        }
+      }
+    }
+
+    .djRadios {
+      li {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
+        .name {
+          flex: 1;
+          margin-left: 28px;
+          font-size: 12px;
+          color: $font-color-white;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .subCount {
+          width: 216px;
+          margin-left: 10px;
+          color: $font-color-grey2;
+          font-size: 12px;
+        }
+
+        .programCount {
+          width: 44px;
+          margin-left: 10px;
+          color: $font-color-grey2;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

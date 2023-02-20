@@ -1,0 +1,63 @@
+@import '../../assets/css/variables.scss';
+
+.comment {
+  margin: 20px 0;
+
+  .sort-category {
+    margin: 20px 0;
+
+    span {
+      padding-right: 10px;
+      cursor: pointer;
+      font-size: $font-size-xs;
+    }
+
+    .active {
+      font-weight: 700;
+    }
+  }
+
+  .comment-list {
+    li {
+      display: flex;
+      justify-content: left;
+      margin-bottom: 15px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+      }
+
+      .info {
+        flex: 1;
+        margin-left: 10px;
+        border-bottom: 1px solid #3F3F3F;
+        padding-bottom: 15px;
+
+        .content {
+          line-height: 1.5;
+          font-size: 12px;
+
+          .nickname {
+            cursor: pointer;
+            color: #5091ca;
+          }
+        }
+
+        .be-replied {
+          line-height: 1.5;
+          font-size: 12px;
+          background: #2A2A2A;
+          padding: 5px 16px;
+          margin: 10px 11px;
+
+          .nickname {
+            cursor: pointer;
+            color: #5091ca;
+          }
+        }
+      }
+    }
+  }
+}

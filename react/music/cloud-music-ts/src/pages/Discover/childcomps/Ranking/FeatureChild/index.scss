@@ -1,0 +1,43 @@
+.feature {
+  margin-top: 10px;
+  display: flex;
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  ul {
+    flex: 1;
+    margin-left: 10px;
+    color: #b1b1b1;
+
+    li {
+      line-height: 40px;
+      padding: 0 10px;
+
+      &:nth-of-type(odd) {
+        background: #2a2a2a;
+
+        &:hover {
+          background: #252525;
+        }
+      }
+
+      &:nth-of-type(even) {
+        &:hover {
+          background: #2a2a2a;
+        }
+      }
+
+      .hot {
+        color: #C10D0C;
+      }
+
+      .name {
+        margin-left: 10px;
+      }
+
+    }
+  }
+}

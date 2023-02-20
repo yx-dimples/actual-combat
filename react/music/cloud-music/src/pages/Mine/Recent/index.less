@@ -1,0 +1,118 @@
+.recent {
+  .tabs {
+    margin-top: 56px;
+    .am-tabs {
+      flex: 1;
+      .am-tabs-default-bar-tab {
+        color: #7e7e7e;
+        font-size: 22px;
+      }
+      .am-tabs-default-bar-tab-active {
+        color: #333;
+        font-weight: bolder;
+      }
+    }
+  }
+  .video {
+    padding: 15px;
+    li {
+      margin-bottom: 20px;
+      display: flex;
+      position: relative;
+      .img-wrap {
+        width: 120px;
+        height: 79px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+        }
+      }
+      .video-info {
+        flex: 1;
+        margin-left: 10px;
+        .title {
+          line-height: 1.3;
+          font-size: 20px;
+          color: #333;
+        }
+        .bottom {
+          color: #7e7e7e;
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          bottom: 5px;
+          width: 230px;
+          .bottom-name {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+  .voice {
+    padding: 15px;
+    .voice-header {
+      display: flex;
+      font-size: 20px;
+      font-weight: bold;
+      align-items: center;
+      span {
+        color: #7e7e7e;
+        font-size: 16px;
+        margin-left: 10px;
+        font-weight: normal;
+      }
+    }
+    .picUrl {
+      width: 80px;
+      height: 80px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+  }
+  .list {
+    padding: 15px;
+    li {
+      margin-bottom: 20px;
+      display: flex;
+      position: relative;
+      .img-wrap {
+        width: 80px;
+        height: 80px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+        }
+      }
+      .list-info {
+        flex: 1;
+        margin-left: 10px;
+        .title {
+          line-height: 1.3;
+          font-size: 20px;
+          color: #333;
+        }
+        .bottom {
+          color: #7e7e7e;
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          bottom: 5px;
+          width: 270px;
+          .bottom-name {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

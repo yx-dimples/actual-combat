@@ -1,0 +1,193 @@
+@import '../../../../assets/css/variables.scss';
+
+.discover {
+  --swiper-theme-color: #d33a31;
+
+  .swiper {
+    width: 100%;
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 439px;
+      height: 182px;
+
+      img {
+        display: block;
+        width: 439px;
+        height: 182px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .wrapper {
+    margin-top: 20px;
+
+    .wrapper-header {
+      display: flex;
+      height: 33px;
+      border-bottom: 2px solid $font-color-red;
+      justify-content: space-between;
+      align-items: center;
+      color: $font-color;
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        .icon {
+          width: 11px;
+          height: 11px;
+          border: 4px solid $font-color-red;
+          border-radius: 100px;
+        }
+
+        .title {
+          font-size: 18px;
+          color: $font-color-white;
+          margin-left: 10px;
+        }
+
+        ul {
+          margin-left: 5px;
+
+          li {
+            float: left;
+            padding: 0 5px;
+            font-size: 12px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .right {
+        font-size: 12px;
+
+        span {
+          margin-right: 5px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    // 最新音乐
+    .song {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      cursor: pointer;
+
+      .song-item {
+        display: flex;
+        align-items: center;
+        width: 33%;
+        margin-bottom: 10px;
+
+        &:hover {
+          background: #2e2e2e;
+        }
+
+        .img-wrap {
+          position: relative;
+          width: 60px;
+          height: 60px;
+
+          img {
+            width: 100%;
+            border-radius: 5px;
+          }
+
+          .play-icon {
+            color: #fff;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            width: 100%;
+            height: 97%;
+          }
+        }
+
+        .item-text {
+          flex: 4;
+          padding-left: 10px;
+          font-size: 12px;
+
+          .name {
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $font-color;
+          }
+
+          .artist {
+            margin-top: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $font-color-grey2;
+            font-size: smaller;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    // 独家推送
+    .privatecontent {
+      margin-top: 10px;
+      display: grid;
+      justify-content: space-between;
+      align-content: space-between;
+      grid-template-rows: repeat(8, auto-fill);
+      grid-template-columns: repeat(3, 32%);
+
+      li {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+
+        .img-wrap {
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+          }
+
+          i {
+            position: absolute;
+            bottom: 8px;
+            right: 5px;
+            color: $font-color-white;
+          }
+        }
+
+        .name {
+          color: $font-color;
+          font-size: $font-size-medium-sm;
+          cursor: pointer;
+          margin-top: 10px;
+          line-height: 1.5;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

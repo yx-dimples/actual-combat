@@ -1,0 +1,85 @@
+.album {
+  .album-header {
+    position: relative;
+    .header-top {
+      color: #fff;
+      position: absolute;
+      top: 0;
+      padding: 0 15px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-content {
+      position: absolute;
+      top: 70px;
+      padding: 0 15px;
+      width: 100%;
+      display: flex;
+      .img-wrap {
+        width: 140px;
+        height: 140px;
+        position: relative;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          z-index: 1001;
+          position: absolute;
+        }
+        .mask{
+          width: 118px;
+          height: 100px;
+          position: absolute;
+          top: -21px;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 100px;
+          z-index: 1;
+          background: #2A2A2A;
+        }
+      }
+      .info {
+        flex: 1;
+        margin-left: 10px;
+        color: #fff;
+        .info-name  {
+          font-size: 20px;
+          line-height: 1.3;
+          font-weight: 600;
+        }
+        .info-author {
+          display: flex;
+          align-items: center;
+          margin-top: 5px;
+          color: #ffffff99;
+          .author-name {
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+        .info-bottom {
+          position: absolute;
+          bottom: 5px;
+          color: #ffffff99;
+          line-height: 1.4;
+          .description {
+            display: flex;
+            align-items: center;
+            p {
+              width: 190px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

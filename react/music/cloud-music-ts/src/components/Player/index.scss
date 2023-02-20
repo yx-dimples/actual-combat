@@ -1,0 +1,184 @@
+@import '../../assets/css/variables.scss';
+
+// // @import ;
+
+.player {
+  $img-left-padding: 36px;
+  $img-outer-border-d: 320px;
+  $img-outer-d: 300px;
+  $support-d: 30px;
+  $support-d-half: $support-d / 2;
+  position: fixed;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  padding: 0 36px;
+  background-color: #252525;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: transform 0.5s;
+  z-index: 1000;
+  color: #fff;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .content {
+    max-width: 870px;
+    margin: auto;
+
+    .song {
+      display: flex;
+
+      .left {
+        padding-right: 70px;
+
+        .play-bar-support {
+          position: absolute;
+          left: $img-left-padding + $img-outer-border-d / 2 - $support-d / 2;
+          top: -$support-d-half;
+          width: $support-d;
+          height: $support-d;
+          z-index: 2;
+        }
+
+        .play-bar {
+          $w: 100px;
+          $h: 146px;
+          position: absolute;
+          top: 0;
+          left: $img-left-padding + $img-outer-border-d / 2 - 6px;
+          width: $w;
+          height: $h;
+          z-index: 1;
+          transform-origin: 0 0;
+          transform: rotate(-30deg);
+          transition: all 0.3s;
+
+          &.playing {
+            transform: rotate(5deg);
+          }
+        }
+
+        .img-outer-border {
+          margin-top: 61px;
+          width: $img-outer-border-d;
+          height: $img-outer-border-d;
+          background-color: #2A2A2A;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+
+          .img-outer {
+            width: $img-outer-d;
+            height: $img-outer-d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $black;
+            background: linear-gradient(-45deg, #333540, #070708, #333540);
+            animation: rotate 20s linear infinite;
+            border-radius: 50%;
+
+            &.paused {
+              animation-play-state: paused;
+            }
+
+            .img-wrap {
+              width: 200px;
+              height: 200px;
+
+              img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        flex: 1;
+        padding-top: 45px;
+        width: 380px;
+        text-align: center;
+
+        .name-wrap {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .name {
+            font-size: 24px;
+            color: $font-color-white;
+          }
+
+          span {
+            color: $theme-color;
+            border: 1px solid $theme-color;
+            padding: 2px;
+            margin-left: 10px;
+          }
+        }
+
+        .artists {
+          font-size: 12px;
+          margin-bottom: 30px;
+          margin-top: 10px;
+          color: $font-color;
+
+          span {
+            cursor: pointer;
+            color: $blue;
+          }
+        }
+
+        .lyric-wrap {
+
+          height: 350px;
+          overflow-y: auto;
+
+          .lyric-item {
+            margin-bottom: 16px;
+            font-size: 12px;
+            text-align: center;
+            color: $font-color;
+
+            p {
+              margin-bottom: 8px;
+              line-height: 1.4;
+            }
+          }
+
+          .active {
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+          }
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+
+        }
+      }
+    }
+
+    .bottom {}
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+}
